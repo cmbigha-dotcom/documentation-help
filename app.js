@@ -21,7 +21,7 @@ function setSearch(q){document.getElementById("search").value=q;searchDocs();doc
 function sendRequest(e){
   e.preventDefault();
 
-  const whatsappNumber = "15124608291";
+  const whatsappNumber = "237675536894";
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const country = document.getElementById("country").value.trim();
