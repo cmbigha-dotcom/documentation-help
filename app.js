@@ -49,4 +49,8 @@ function toggleLanguage(){
  const input=document.getElementById("search");
  input.placeholder=input.dataset[lang+"Placeholder"];
 }
+function toggleMenu(){
+  const nav=document.getElementById("mobileNav");
+  nav.classList.toggle("open");
+}
 render();
