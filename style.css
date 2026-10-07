@@ -71,4 +71,19 @@
     background: #f4f8ff;
     color: #175cd3;
   }
+
+  .searchbar {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .searchbar input {
+    flex: 1 1 0%;
+    min-width: 0;
+  }
+
+  .searchbar button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
 }
