@@ -10,12 +10,24 @@ const docs=[
 ];
 function render(items=docs){
  const box=document.getElementById("results");
+ if(items.length===0){
+  box.innerHTML='<p class="no-results" role="status">No matching documents found</p>';
+  document.getElementById("count").textContent="0 guides";
+  return;
+ }
  box.innerHTML=items.map(d=>`<article class="result"><span class="tag">${d[0]}</span><h3>${d[1]}</h3><p>${d[3]}</p><a href="#request" style="color:#175cd3;font-weight:750;font-size:13px" onclick="document.getElementById('type').value='${d[1]}'">Request help →</a></article>`).join("");
  document.getElementById("count").textContent=items.length+" guides";
 }
 function searchDocs(){
  const q=document.getElementById("search").value.toLowerCase().trim();
  render(q?docs.filter(d=>(d.join(" ")).toLowerCase().includes(q)):docs);
+}
+function searchAndScroll(){
+ searchDocs();
+ const results=document.getElementById("results");
+ const header=document.querySelector("header");
+ const top=results.getBoundingClientRect().top+window.scrollY-header.offsetHeight-16;
+ window.scrollTo({top,behavior:"smooth"});
 }
 function setSearch(q){document.getElementById("search").value=q;searchDocs();document.getElementById("documents").scrollIntoView({behavior:"smooth"})}
 function sendRequest(e){
