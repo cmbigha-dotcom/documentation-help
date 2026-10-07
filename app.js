@@ -80,3 +80,4 @@ document.querySelectorAll("#mobileNav a").forEach(link=>link.addEventListener("c
 document.addEventListener("keydown",event=>{if(event.key==="Escape")closeMenu()});
 window.addEventListener("resize",()=>{if(window.innerWidth>768)closeMenu()});
 render();
+document.getElementById("search-button").addEventListener("click",searchAndScroll);
