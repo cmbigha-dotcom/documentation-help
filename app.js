@@ -51,6 +51,20 @@ function toggleLanguage(){
 }
 function toggleMenu(){
   const nav=document.getElementById("mobileNav");
-  nav.classList.toggle("open");
+  const button=document.querySelector(".menu-toggle");
+  const isOpen=button.getAttribute("aria-expanded")==="true";
+  button.setAttribute("aria-expanded",String(!isOpen));
+  button.setAttribute("aria-label",isOpen?"Open menu":"Close menu");
+  nav.classList.toggle("open",!isOpen);
 }
+function closeMenu(){
+  const nav=document.getElementById("mobileNav");
+  const button=document.querySelector(".menu-toggle");
+  button.setAttribute("aria-expanded","false");
+  button.setAttribute("aria-label","Open menu");
+  nav.classList.remove("open");
+}
+document.querySelectorAll("#mobileNav a").forEach(link=>link.addEventListener("click",closeMenu));
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeMenu()});
+window.addEventListener("resize",()=>{if(window.innerWidth>768)closeMenu()});
 render();
