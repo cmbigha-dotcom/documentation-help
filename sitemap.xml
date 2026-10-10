@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://documentationhelp.info/</loc>
   </url>
-
   <url>
     <loc>https://documentationhelp.info/passport-requirements.html</loc>
   </url>
-
   <url>
     <loc>https://documentationhelp.info/visa-requirements.html</loc>
   </url>
@@ -16,20 +13,24 @@
     <loc>https://documentationhelp.info/birth-certificate-requirements.html</loc>
   </url>
   <url>
-  <loc>https://documentationhelp.info/employment-document-requirements.html</loc>
-</url>
-
-<url>
-  <loc>https://documentationhelp.info/education-document-requirements.html</loc>
-</url>
-<url>
-  <loc>https://documentationhelp.info/vehicle-document-requirements.html</loc>
-</url>
+    <loc>https://documentationhelp.info/business-document-requirements.html</loc>
+  </url>
   <url>
-  <loc>https://documentationhelp.info/property-document-requirements.html</loc>
-    <url>
+    <loc>https://documentationhelp.info/employment-document-requirements.html</loc>
+  </url>
+  <url>
+    <loc>https://documentationhelp.info/education-document-requirements.html</loc>
+  </url>
+  <url>
+    <loc>https://documentationhelp.info/vehicle-document-requirements.html</loc>
+  </url>
+  <url>
+    <loc>https://documentationhelp.info/property-document-requirements.html</loc>
+  </url>
+  <url>
     <loc>https://documentationhelp.info/uk-visa-requirements.html</loc>
-    <url>
-  <loc>https://documentationhelp.info/canada-visitor-visa-requirements.html</loc>
-</url>
+  </url>
+  <url>
+    <loc>https://documentationhelp.info/canada-visitor-visa-requirements.html</loc>
+  </url>
 </urlset>
