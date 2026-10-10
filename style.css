@@ -162,3 +162,41 @@ max-width: 100%;
 height: auto;
 }
 }
+/* Final fix for Canada page heading on mobile */
+@media (max-width: 768px) {
+  body .section .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  body .section .heading .pill {
+    display: block;
+    position: static;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    overflow-wrap: anywhere;
+  }
+
+  body .section .heading h1 {
+    display: block;
+    width: 100%;
+    font-size: clamp(32px, 8vw, 42px);
+    line-height: 1.15;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  body .section .heading p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
