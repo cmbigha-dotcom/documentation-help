@@ -200,3 +200,27 @@ height: auto;
     line-height: 1.6;
   }
 }
+/* Canada page mobile layout fix */
+@media (max-width: 768px) {
+body {
+margin: 0;
+}
+
+body .section {
+padding-top: 24px;
+padding-bottom: 32px;
+}
+
+body .section h1 {
+font-size: clamp(32px, 8vw, 42px);
+line-height: 1.15;
+margin-top: 0;
+margin-bottom: 16px;
+overflow-wrap: anywhere;
+}
+
+body .section p {
+font-size: 17px;
+line-height: 1.6;
+}
+}
