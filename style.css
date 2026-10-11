@@ -282,3 +282,18 @@ header #mobileNav.open {
 display: flex;
 }
 }
+
+  /* Hide desktop navigation on mobile */
+@media (max-width: 768px) {
+header nav:not(#mobileNav) {
+display: none !important;
+}
+
+header #mobileNav {
+display: none;
+}
+
+header #mobileNav.open {
+display: flex;
+}
+}
