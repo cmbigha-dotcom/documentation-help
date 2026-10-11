@@ -298,7 +298,8 @@ display: flex;
     width: 100%;
   }
 }
- /* DocuHelp Light Blue Theme */
+ 
+  /* DocuHelp Light Blue Theme */
 :root {
   --docu-light-blue: #eaf4ff;
   --docu-soft-blue: #d6e9ff;
