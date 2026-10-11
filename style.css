@@ -231,3 +231,37 @@ line-height: 1.5;
 margin: 0;
 }
 }
+/* Canada page mobile navigation fix */
+@media (max-width: 768px) {
+header.site-header {
+height: auto;
+position: relative;
+}
+
+header.site-header > .wrap {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+
+header.site-header .logo {
+display: block;
+font-size: 20px;
+}
+
+header.site-header nav {
+display: flex;
+flex-wrap: wrap;
+gap: 8px 16px;
+width: 100%;
+}
+
+header.site-header nav a {
+display: inline-block;
+font-size: 14px;
+line-height: 1.5;
+}
+}
