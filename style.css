@@ -282,5 +282,20 @@ header #mobileNav.open {
 display: flex;
 }
 }
+/* Fix duplicate navigation on mobile */
+@media (max-width: 768px) {
+  header .wrap.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
+  header .wrap.nav > nav:not(#mobileNav) {
+    display: none !important;
+  }
+
+  header #mobileNav {
+    width: 100%;
+  }
+}
  
