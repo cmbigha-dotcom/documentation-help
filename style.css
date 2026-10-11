@@ -247,21 +247,38 @@ padding-top: 12px;
 padding-bottom: 12px;
 }
 
-header.site-header .logo {
-display: block;
+/* Mobile header and navigation fix */
+@media (max-width: 768px) {
+header .wrap.nav {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+}
+
+header .brand {
 font-size: 20px;
 }
 
-header.site-header nav {
-display: flex;
-flex-wrap: wrap;
-gap: 8px 16px;
-width: 100%;
+header .menu-toggle {
+display: block;
 }
 
-header.site-header nav a {
-display: inline-block;
-font-size: 14px;
+header #mobileNav {
+display: none;
+flex-direction: column;
+width: 100%;
+gap: 12px;
+}
+
+header #mobileNav a {
+display: block;
+font-size: 16px;
 line-height: 1.5;
+}
+
+header #mobileNav.open {
+display: flex;
 }
 }
