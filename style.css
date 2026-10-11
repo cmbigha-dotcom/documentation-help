@@ -354,3 +354,54 @@ textarea:focus {
   outline: 2px solid var(--docu-brand-blue);
   outline-offset: 2px;
 }
+
+
+/* DocuHelp light blue theme and card improvements */
+
+:root {
+–docu-light-blue: #f0f7ff;
+–docu-soft-blue: #dbeafe;
+–docu-brand-blue: #2563eb;
+}
+
+body {
+background-color: #f8fbff;
+}
+
+.card,
+.categories button,
+.results,
+.request-grid > div {
+border: 1px solid #dbeafe;
+border-radius: 18px;
+background-color: #ffffff;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.categories button:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 24px rgba(37, 99, 235, 0.10);
+}
+
+.card strong,
+.categories button strong {
+color: #2563eb;
+}
+
+.section.soft {
+background-color: #f0f7ff;
+}
+
+button,
+.navbtn {
+transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+.card,
+.categories button {
+width: 100%;
+margin-bottom: 12px;
+}
+}
