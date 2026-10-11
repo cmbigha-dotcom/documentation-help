@@ -200,27 +200,34 @@ height: auto;
     line-height: 1.6;
   }
 }
-/* Canada page mobile layout fix */
 @media (max-width: 768px) {
 body {
 margin: 0;
 }
 
-body .section {
-padding-top: 24px;
+body > main > section.section {
+padding-top: 12px !important;
 padding-bottom: 32px;
 }
 
-body .section h1 {
-font-size: clamp(32px, 8vw, 42px);
-line-height: 1.15;
+body > main > section.section > .wrap > .heading {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
 margin-top: 0;
-margin-bottom: 16px;
-overflow-wrap: anywhere;
+margin-bottom: 24px;
 }
 
-body .section p {
-font-size: 17px;
-line-height: 1.6;
+body > main > section.section > .wrap > .heading h1 {
+font-size: clamp(32px, 8vw, 42px);
+line-height: 1.15;
+margin: 0;
+}
+
+body > main > section.section > .wrap > .heading p {
+font-size: 18px;
+line-height: 1.5;
+margin: 0;
 }
 }
