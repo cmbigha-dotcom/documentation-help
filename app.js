@@ -53,13 +53,22 @@ ${message}`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
   window.open(whatsappUrl, "_blank");
 }
-function toggleLanguage(){
- const lang=document.documentElement.lang==="en"?"fr":"en";
- document.documentElement.lang=lang;
- document.querySelector(".lang").textContent=lang==="en"?"FR":"EN";
- document.querySelectorAll("[data-en]").forEach(el=>el.textContent=el.dataset[lang]);
- const input=document.getElementById("search");
- input.placeholder=input.dataset[lang+"Placeholder"];
+function toggleLanguage() {
+  const lang = document.documentElement.lang === "en" ? "fr" : "en";
+  document.documentElement.lang = lang;
+  const button = document.querySelector(".lang");
+  button.textContent = lang === "en" ? "FR" : "EN";
+  button.classList.toggle("active", lang === "fr");
+  button.setAttribute("aria-pressed", String(lang === "fr"));
+  button.setAttribute(
+    "aria-label",
+    lang === "en" ? "Switch to French" : "Passer en anglais"
+  );
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = el.dataset[lang];
+  });
+  const input = document.getElementById("search");
+  input.placeholder = input.dataset[lang + "Placeholder"];
 }
 function toggleMenu(){
   const nav=document.getElementById("mobileNav");
