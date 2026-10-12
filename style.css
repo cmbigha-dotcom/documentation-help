@@ -246,6 +246,7 @@ gap: 10px;
 padding-top: 12px;
 padding-bottom: 12px;
 }
+}
 
 /* Mobile header and navigation fix */
 @media (max-width: 768px) {
