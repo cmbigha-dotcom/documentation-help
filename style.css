@@ -494,3 +494,13 @@ margin-bottom: 12px;
     margin-bottom: 10px;
   }
 }
+/* Keep all category images uniform on desktop */
+@media (min-width: 769px) {
+  .categories button > img.category-image {
+    width: 100% !important;
+    height: 100px !important;
+    max-height: 100px !important;
+    object-fit: cover !important;
+    display: block;
+  }
+}
