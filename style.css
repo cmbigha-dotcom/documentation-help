@@ -505,3 +505,15 @@ margin-bottom: 12px;
     display: block;
   }
 }
+/* Highlight the active language button */
+.lang.active {
+  background-color: #175cd3 !important;
+  color: #ffffff !important;
+  border-color: #175cd3 !important;
+  font-weight: 800;
+  box-shadow: 0 0 0 3px rgba(23, 92, 211, 0.15);
+}
+
+.lang {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
